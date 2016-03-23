@@ -9,8 +9,9 @@ var webpack = require('webpack');
 module.exports = {
     context: __dirname,
     entry: {
-        app: ["webpack/hot/dev-server", "./server"]
+        app: ["./app/server"]
     },
+    target : 'node',
     output: {
         publicPath: 'http://localhost:3000/',
         path: __dirname + "/dist",
@@ -65,11 +66,11 @@ module.exports = {
     
     module : {
         loaders: [
-            { test: /\.ts$/, loader: 'ts', exclude: ['node_modules', 'dist', 'typings'] }
+            { test: /\.tsx?$/, loader: 'ts-loader' }
         ]
     },
     
     resolve : {
-       extensions: ['', '.webpack.js', '.web.js', '.ts', '.js']
+       extensions: ['', '.webpack.js', '.ts']
     }
 };
