@@ -13,7 +13,10 @@ app.get('/paperspace', (req:any, res:any) => {
     res.send('Hey, Paperspace app started....');
 });
 
-var server = app.listen (8080, () => {
+const serverHost = process.env.HOST || '0.0.0.0';
+const serverPort = process.env.PORT || 80
+
+var server = app.listen (serverPort, serverHost, () => {
     var host:string = server.address().address;
     var port:number = server.address().port;
 
