@@ -4,9 +4,12 @@
   "description": "Node JS project for content management system",
   "main": "index.js",
   "scripts": {
+    "post-install" : "typings install",  
     "test": "echo \"Error: no test specified\" && exit 1",
-    "devserver": "./node_modules/.bin/webpack-dev-server --inline --hot --progress --colors --content-base .",
-    "dev": "webpack --progress --colors"
+    "devserver": "./node_modules/.bin/webpack-dev-server --inline --hot --progress --colors --config webpack.server.config.js --content-base ./app",
+    "dev": "./node_modules/.bin/webpack --progress --colors --config webpack.server.config.js --content-base ./app",
+    "start":"npm run build && node dist/backend.js",
+    "build": "npm install && npm run post-install"
   },
   "repository": {
     "type": "git",
@@ -30,6 +33,7 @@
     "ts-loader": "^0.8.1",
     "typescript": "^1.8.9",
     "webpack": "^1.12.14",
-    "webpack-dev-server": "^1.14.1"
+    "webpack-dev-server": "^1.14.1",
+    "source-map-support": "^0.2.10"
   }
 }
