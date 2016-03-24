@@ -10,9 +10,13 @@
   },
   "env": {
     "WEB_CONCURRENCY": {
-      "description": "The number of processes to run.",
+      "description": "process to scale",
       "value": "1"
-    }  
+    },
+    "SETUP_BY": {
+            "description": "NodeJS ES6 backend",
+            "value": "test"  
+    }
   },
   
   "buildpacks": [
