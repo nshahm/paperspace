@@ -2,7 +2,7 @@
   "name": "Paperspace",
   "description": "A NodeJS app for content management system",
   "repository": "https://github.com/nshahm/paperspace.git",
-  "logo": "",
+  "logo": "https://shahm-paperspace.herokuapp.com/shahm-paperspace.png",
   "keywords": ["node", "express", "static", "webpack"],
   "success_url": "/paperspace",
   "scripts": {
