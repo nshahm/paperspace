@@ -6,7 +6,7 @@
   "keywords": ["node", "express", "static", "webpack"],
   "success_url": "/paperspace",
   "scripts": {
-      "postdeploy": "npm start"
+      "postdeploy": ""
   },
   "env": {
     "WEB_CONCURRENCY": {
