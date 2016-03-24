@@ -8,8 +8,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "devserver": "./node_modules/.bin/webpack-dev-server --inline --hot --progress --colors --config webpack.server.config.js --content-base ./app",
     "dev": "./node_modules/.bin/webpack --progress --colors --config webpack.server.config.js --content-base ./app",
-    "start":"npm run build-prod && npm run post-install && node dist/backend.js",
-    "build": "npm install && npm run post-install",
+    "start":"node dist/backend.js",
+    "build": "npm install && npm run post-install && npm run dev",
     "build-prod": "./node_modules/.bin/webpack --progress --colors --config webpack.server.config.js --content-base ./app -p"
   },
   "repository": {
