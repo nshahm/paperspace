@@ -15,8 +15,12 @@
     "type": "git",
     "url": "git+https://github.com/nshahm/paperspace.git"
   },
-  "author": "",
-  "license": "ISC",
+  "engines": {
+    "node" : "5.9.0",
+    "npm" :  "3.7.3" 
+  },
+  "author": "Shahm Nattarshah",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/nshahm/paperspace/issues"
   },

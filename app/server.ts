@@ -9,7 +9,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 
-app.get('/', (req:any, res:any) => {
+app.get('/paperspace', (req:any, res:any) => {
     res.send('Hey, Paperspace app started....');
 });
 
@@ -18,4 +18,4 @@ var server = app.listen (8080, () => {
     var port:number = server.address().port;
 
     console.log('Example app listening at http://%s:%s', host, port);
-})
+});
